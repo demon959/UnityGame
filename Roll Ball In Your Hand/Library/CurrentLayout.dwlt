@@ -139,7 +139,7 @@ MonoBehaviour:
   m_MinSize: {x: 713, y: 492}
   m_MaxSize: {x: 18008, y: 14042}
   vertical: 0
-  controlID: 21
+  controlID: 9
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -183,7 +183,7 @@ MonoBehaviour:
   m_MinSize: {x: 202, y: 442}
   m_MaxSize: {x: 4002, y: 8042}
   vertical: 1
-  controlID: 22
+  controlID: 10
 --- !u!114 &9
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -202,8 +202,8 @@ MonoBehaviour:
     y: 0
     width: 479
     height: 463
-  m_MinSize: {x: 204, y: 221}
-  m_MaxSize: {x: 4004, y: 4021}
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 14}
   m_Panes:
   - {fileID: 14}
@@ -344,23 +344,23 @@ MonoBehaviour:
     height: 442
   m_TreeViewState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 9adbfeff
-    m_LastClickedID: -74854
-    m_ExpandedIDs: e0f0feff30f2feff30f3feff70f3feff50f9feff582affff0c4effff1273ffffd87dfffff09bffff4eb9ffff7ebfffffb4c6ffff70d6ffffe2fbffff00000000
+    m_SelectedIDs: 
+    m_LastClickedID: 0
+    m_ExpandedIDs: ec75ffffc47fffff14a6ffff0ab2ffffe0fbffff000000005c250000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
-      m_Name: Maze Cell 0, 0
-      m_OriginalName: Maze Cell 0, 0
+      m_Name: 
+      m_OriginalName: 
       m_EditFieldRect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 0
         height: 0
-      m_UserData: -25622
+      m_UserData: 0
       m_IsWaitingForDelay: 0
       m_IsRenaming: 0
-      m_OriginalEventType: 0
+      m_OriginalEventType: 11
       m_IsRenamingFilename: 0
       m_ClientGUIView: {fileID: 9}
     m_SearchString: 
@@ -438,7 +438,8 @@ MonoBehaviour:
     m_ScenePaths: []
     m_ShowAllHits: 0
     m_SearchArea: 0
-    m_Folders: []
+    m_Folders:
+    - Assets/Scripts
   m_ViewMode: 0
   m_StartGridSize: 64
   m_LastFolders: []
@@ -449,7 +450,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 5e2b0000
     m_LastClickedID: 11102
-    m_ExpandedIDs: b0240000
+    m_ExpandedIDs: 00000000b6240000e02400000c25000032250000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -477,18 +478,18 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 4ad4ffff00000000b0240000542500006c250000
+    m_ExpandedIDs: 00000000b6240000e02400000c25000032250000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
-      m_Name: Maze
-      m_OriginalName: Maze
+      m_Name: IntVector2
+      m_OriginalName: IntVector2
       m_EditFieldRect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 0
         height: 0
-      m_UserData: 9572
+      m_UserData: 10116
       m_IsWaitingForDelay: 0
       m_IsRenaming: 0
       m_OriginalEventType: 0
@@ -665,9 +666,9 @@ MonoBehaviour:
       speed: 2
       m_Value: 0
   m_Rotation:
-    m_Target: {x: -0.07739328, y: 0.9184795, z: -0.22506866, w: -0.3158329}
+    m_Target: {x: -0.077393256, y: 0.9184792, z: -0.2250686, w: -0.31583282}
     speed: 2
-    m_Value: {x: -0.07739325, y: 0.91847914, z: -0.22506858, w: -0.3158328}
+    m_Value: {x: -0.077393256, y: 0.9184792, z: -0.2250686, w: -0.31583282}
   m_Size:
     m_Target: 25.031963
     speed: 2

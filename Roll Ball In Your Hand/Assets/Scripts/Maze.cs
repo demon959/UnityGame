@@ -4,26 +4,28 @@ using UnityEngine;
 
 public class Maze : MonoBehaviour {
 
-    public int sizeX, sizeZ;
-
+    public IntVextor2 size;
     public MazeCell cellPrefab;
+    public float generationStepDelay;
 
     private MazeCell[,] cells;
 
-    public void Generate() {
-        cells = new MazeCell[sizeX, sizeZ];
-        for (int x = 0; x < sizeX; x++) {
-            for (int z = 0; z < sizeZ; z++) {
-                CreateCell(x, z);
+    public IEnumerator Generate() {
+        WaitForSeconds delay = new WaitForSeconds(generationStepDelay);
+        cells = new MazeCell[size.x, size.z];
+        for (int x = 0; x < size.x; x++) {
+            for (int z = 0; z < size.z; z++) {
+                yield return delay;
+                CreateCell(new IntVextor2(x, z));
             }
         }
     }
 
-    private void CreateCell (int x, int z) {
+    private void CreateCell (IntVextor2 coordinates) {
         MazeCell newCell = Instantiate(cellPrefab) as MazeCell;
-        cells[x, z] = newCell;
-        newCell.name = "Maze Cell " + x + ", " + z;
+        cells[coordinates.x, coordinates.z] = newCell;
+        newCell.name = "Maze Cell " + coordinates.x + ", " + coordinates.z;
         newCell.transform.parent = transform;
-        newCell.transform.localPosition = new Vector3(x - sizeX * 0.5f + 0.5f, 0f, z - sizeZ * 0.5f + 0.5f);
+        newCell.transform.localPosition = new Vector3(coordinates.x - size.x * 0.5f + 0.5f, 0f, coordinates.z - size.z * 0.5f + 0.5f);
     }
 }

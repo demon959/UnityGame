@@ -203,6 +203,21 @@ Prefab:
       propertyPath: cellPrefab
       value: 
       objectReference: {fileID: 1279629539}
+    - target: {fileID: 114992058593815586, guid: 859415455a95f1c4594ee3476f69730e,
+        type: 2}
+      propertyPath: generationStepDelay
+      value: 0.05
+      objectReference: {fileID: 0}
+    - target: {fileID: 114992058593815586, guid: 859415455a95f1c4594ee3476f69730e,
+        type: 2}
+      propertyPath: size.x
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 114992058593815586, guid: 859415455a95f1c4594ee3476f69730e,
+        type: 2}
+      propertyPath: size.z
+      value: 20
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 859415455a95f1c4594ee3476f69730e, type: 2}
   m_IsPrefabParent: 0
@@ -335,6 +350,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4beb55427ca503498222f73271b056d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  coordinates:
+    x: 0
+    z: 0
 --- !u!1 &1610599217
 GameObject:
   m_ObjectHideFlags: 0
